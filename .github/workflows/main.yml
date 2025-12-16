@@ -1,22 +1,23 @@
 name: jishnu
-
-on:
+on: 
   workflow_dispatch:
-
-env:
-  APP_ENV: jishnu
-
+env: 
+ APP_ENV: jishnu
 jobs:
-  first-job:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Print environment name
-        run: echo "Environment:$APP_ENV"
+ first-job:
+  runs-on: ubuntu-latest
+  steps:
+    - name: firsst step
+      run: echo "my name is $APP_ENV"
 
-  build:
-    runs-on: ubuntu-latest
-    env:
-      JAVA_HOME: /usr/lib/jvm/java-21
-    steps:
-      - name: Print Java home
-        run: echo "Java is installed at $JAVA_HOME"
+ shiyas:
+  runs-on: ubuntu-latest
+  env:
+   JAVA_HOME: /usr/lib/jvm/java-21
+  steps:
+   - name: demo
+     run: echo "Java is installed at $JAVA_HOME"
+
+
+
+     
